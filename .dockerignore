@@ -1,0 +1,17 @@
+# Artifacts
+vendor/
+storage/
+app/bootstrap/cache/*
+
+# Developer utilities
+.git*
+.env*
+.editorconfig
+Dockerfile
+docker-compose.yml
+docker/Dockerfile
+docker/supervisord.conf
+phpstan.neon
+README.md
+
+!.env.example

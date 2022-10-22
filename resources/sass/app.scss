@@ -1,0 +1,67 @@
+// Typography
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+// Twemoji
+@font-face {
+    font-family: "Twemoji Mozilla";
+    src: url("/fonts/TwemojiMozilla.ttf") format("truetype");
+    font-display: block;
+    font-weight: 400;
+}
+
+$font-family-sans-serif: "Source Sans Pro", sans-serif, "Twemoji Mozilla";
+
+// Bootstrap
+@import "~bootstrap/scss/functions";
+
+@import "tadah/bootstrap";
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/placeholders";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/utilities/api";
+
+// Datepicker
+@import "../../node_modules/vanillajs-datepicker/sass/datepicker-bs5.scss";
+
+// Font Awesome
+// NOTE: This is a compiled asset. Don't change it!
+// https://kit-pro.fontawesome.com/releases/v6.1.2/css/pro.min.css - v6.x.x
+@import "../css/fa6-pro.min.css";
+
+// Tadah
+@import "tadah/extra";

@@ -1,0 +1,13 @@
+default:
+  image: php:8.1-alpine
+
+before_script:
+  - apk add -q --no-progress libpng-dev
+  - docker-php-ext-install gd > /dev/null
+  - curl -s -S https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+  - cp .env.testing .env
+  - composer i -q -n --no-ansi --no-progress
+
+static analysis:
+  script:
+    - php -d memory_limit=512M vendor/bin/phpstan analyse -c phpstan.neon

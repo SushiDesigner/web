@@ -1,0 +1,13 @@
+includes:
+- ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+  paths:
+    - app
+    - bootstrap
+    - config
+    - database
+    - routes
+  level: 0
+  checkOctaneCompatibility: true
+  checkModelProperties: true
